@@ -1,11 +1,12 @@
 This is a new document to do the 
-add 
+add y (cambiamos por aquí)
 status
 and commit
-things 
+things (y otro pquito por acá)
 let's try
 first step is create a new document 
 and save it on the folder where is the repository 
 Ok 
 let's see if this file is being tracked
 yes it is
+para el tercer commit 
