@@ -10,3 +10,5 @@ Ok
 let's see if this file is being tracked
 yes it is
 para el tercer commit 
+Ahora vamos a intentar unos checkouts
+VOlvemos a agregar esta linea para ponerlo en staging y quitarlo con rest hard 
