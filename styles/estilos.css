@@ -1,4 +1,7 @@
 body {
     text-align: center;
-    color: greenyellow;
+    color: gray;
+}
+#cabecera {
+    background-color: blue;
 }
