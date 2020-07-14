@@ -6,3 +6,6 @@ things
 let's try
 first step is create a new document 
 and save it on the folder where is the repository 
+Ok 
+let's see if this file is being tracked
+yes it is
