@@ -1,0 +1,51 @@
+------Notas gt y github----------
+
+
+C O M A N D O S  B A S I C O S      G  I  T
+
+$ git init 
+    Inicia un nuevo repositorio
+$ git add "nombre del archivo.txt"
+    Agrega el archivo deseado al stage area [temporal]
+$ git commit [-m "mensaje deseado"]
+    Guarda los cambios hechos en el repositorio [real]
+$ git add [archivo] / .
+    Agrega el archivo al staging y con punto agrega todos los que esten en el directiorio
+$ git status
+    Muestra uinfo del repositorio   
+$ git show [archivo]
+    Muestra cambios historicos hechos en el archivo 
+$ git log nombre de archivo 
+    muestr historia de cierto archivos
+$ git diff [tag1] [tag2]
+    muestra las diferencias entre ambos archivos
+$ git reset [tag] --hard
+    borra todo en el repositorio y en el staging sobre el tag especificado
+$ git reset [tag] --soft 
+    borra historial y registros de git pero deja en staging el archivo para un nuevo commit
+$ git reset [archivo] HEAD 
+    Saca archivos del staging, no los borra ni nada, sirve para hacer un commit pero evitando el archivo 
+$ git rm --cache [file]
+    Elimia del staging al tag seleccionado 
+$ git rm --force [file]
+    Elimina del repositorio y del disco duro
+$ git push
+$ git pull
+$ git checkout [tag]
+    Nos prmite ver versiones anteriores y regresar a las mas actuales 
+$ git merge    
+
+
+***Diferencia entre git reset head y git rm --cached <file>
+Supongamos que historia.txt esta en el stage area.
+Si usamos el reset HEAD pasa de stage a unstage. O sea que git le sigue haciendo seguimiento y sabe cuando lo modificas sin embargo tienes que hacer un add historia para luego hacerle un commit.
+El git rm --cached lo que hace es pasar de stage a un untracked. O sea que git ya no le esta haciendo seguimiento y tampoco sabe cuando lo modificas git solo sabe que esta ahi.
+****
+
+RECORDATORIO DE COMANDOS GRLS
+ls
+mkdir
+touch
+cat 
+history
+rm 
