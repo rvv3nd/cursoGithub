@@ -1,0 +1,8 @@
+This is a new document to do the 
+add 
+status
+and commit
+things 
+let's try
+first step is create a new document 
+and save it on the folder where is the repository 
