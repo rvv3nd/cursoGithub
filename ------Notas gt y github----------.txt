@@ -7,15 +7,15 @@ $ git init
     Inicia un nuevo repositorio
 $ git add "nombre del archivo.txt"
     Agrega el archivo deseado al stage area [temporal]
-$ git commit [-m "mensaje deseado"]
+$ git commit -m ["mensaje deseado"]
     Guarda los cambios hechos en el repositorio [real]
 $ git add [archivo] / .
     Agrega el archivo al staging y con punto agrega todos los que esten en el directiorio
 $ git status
-    Muestra uinfo del repositorio   
+    Muestra info del repositorio   
 $ git show [archivo]
     Muestra cambios historicos hechos en el archivo 
-$ git log nombre de archivo 
+$ git log [nombre de archivo]
     muestr historia de cierto archivos
 $ git diff [tag1] [tag2]
     muestra las diferencias entre ambos archivos
@@ -30,10 +30,19 @@ $ git rm --cache [file]
 $ git rm --force [file]
     Elimina del repositorio y del disco duro
 $ git push
+    Sube los cambios del repositorio local al remoto
 $ git pull
+    Obttiene las ultimas actualizaciones del repositorio remoto al directo y repositroio local
 $ git checkout [tag]
     Nos prmite ver versiones anteriores y regresar a las mas actuales 
-$ git merge    
+$ git checkout [rama]
+    Sirve para moverse entre rama
+$ git merge [rama]
+    Es un commit que "fusiona" la rama especificada con la rama master 
+    *NOTA se hace merge sobre la rama a la que se le van a agregar los cambios*
+$ git branch [nombre de la rama]
+    crea una rama desde la rama en la que te ecnuentres 
+
 
 
 ***Diferencia entre git reset head y git rm --cached <file>
@@ -41,6 +50,29 @@ Supongamos que historia.txt esta en el stage area.
 Si usamos el reset HEAD pasa de stage a unstage. O sea que git le sigue haciendo seguimiento y sabe cuando lo modificas sin embargo tienes que hacer un add historia para luego hacerle un commit.
 El git rm --cached lo que hace es pasar de stage a un untracked. O sea que git ya no le esta haciendo seguimiento y tampoco sabe cuando lo modificas git solo sabe que esta ahi.
 ****
+
+Para trabajar con GitHub
+
+# Primero: Guardar la URL del repositorio de GitHub
+# con el nombre de origin
+git remote add origin URL
+
+# Segundo: Verificar que la URL se haya guardado
+# correctamente:
+git remote
+git remote -v
+
+# Tercero: Traer la versión del repositorio remoto y
+# hacer merge para crear un commit con los archivos
+# de ambas partes. Podemos usar git fetch y git merge
+# o solo el git pull con el flag --allow-unrelated-histories:
+git pull origin master --allow-unrelated-histories
+
+# Por último, ahora sí podemos hacer git push para guardar
+# los cambios de nuestro repositorio local en GitHub:
+git push origin master
+
+@
 
 RECORDATORIO DE COMANDOS GRLS
 ls
