@@ -2,3 +2,4 @@ hola mundo
 empecamos ediando esto para la rama master
 y agregamos esta linea 
 para ver si hay un conflicto 
+sí hubo conflivto y ahora deberíamos proceder sin errores
